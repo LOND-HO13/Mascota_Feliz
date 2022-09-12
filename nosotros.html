@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>nosotros</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            header {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                transition: 0.7s;
+                padding: 30px 20px;
+                z-index: 10;
+            }
+
+            header.abajo {
+                background: #fff;
+                padding: 15px 20px;
+            }
+
+            header .logo {
+                position: relative;
+                color: rgb(122, 95, 70);
+                font-weight: bold;
+                font-size: 2em;
+                letter-spacing: 2px;
+                transition: 1.5s;
+                text-decoration: none;
+            }
+
+            nav {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            header ul {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            header ul li {
+                list-style: none;
+            }
+
+            header ul li a {
+                position: relative;
+                font-family: helvetica;
+                margin: 0 15px;
+                text-decoration: none;
+                color: #fff;
+                letter-spacing: 2px;
+                font-weight: 600;
+                transition: 0.7s;
+            }
+
+            .zona1 {
+                position: relative;
+                width: 100%;
+                height: 105vh;
+                background: url(imagenes/fondo2.jpg);
+                background-size: cover;
+                background-position: center center;
+            }
+
+            header.abajo .logo,
+            header.abajo ul li a {
+                color: #000;
+            }
+
+            #barra_espaciadora {
+                width: 100%;
+                height: 100px;
+                background: linear-gradient(70deg, #FDF4DE, #E3DCC8, #FAF6E8, #E3DEC8, #F9F6E2);
+            }
+
+
+            .article1 {
+                grid-area: article_1;
+                background-color: #FDF4DE;
+                border: #FDF4DE;
+                border-radius: 10px;
+                border-style: solid;
+                height: 100%;
+            }
+
+            .article1:hover{
+                box-shadow:
+                    1px 1px #a8abad,
+                    2px 2px #a8abad,
+                    3px 3px #a8abad;
+                -webkit-transform: translateX(-3px);
+                transform: translateX(-3px);
+            }
+
+            .article2 {
+                grid-area: article_2;
+                background-color: #FDF4DE;
+                border: #FDF4DE;
+                border-radius: 10px;
+                border-style: solid;
+                height: 100%;
+                
+            }
+
+            .article2:hover{
+                box-shadow:
+                    1px 1px #a8abad,
+                    2px 2px #a8abad,
+                    3px 3px #a8abad;
+                -webkit-transform: translateX(-3px);
+                transform: translateX(-3px);
+            }
+
+            .article3 {
+                grid-area: article_3;
+                background-color: #FDF4DE;
+                border: #FDF4DE;
+                border-radius: 10px;
+                border-style: solid;
+                height: 100%;
+            }
+
+            .article3:hover{
+                box-shadow:
+                    1px 1px #a8abad,
+                    2px 2px #a8abad,
+                    3px 3px #a8abad;
+                -webkit-transform: translateX(-3px);
+                transform: translateX(-3px);
+            }
+
+            .article4 {
+                grid-area: article_4;
+                background-color: white;
+                border: #FDF4DE;
+                border-radius: 10px 0px 10px 10px;
+                border-style: solid;
+                height: 100%;
+
+            }
+
+            .article4:hover{
+                box-shadow:
+                    1px 1px #a8abad,
+                    2px 2px #a8abad,
+                    3px 3px #a8abad;
+                -webkit-transform: translateX(-3px);
+                transform: translateX(-3px);
+            }
+
+            #copyright {
+                display: grid;
+                grid-template-areas: "article_1 article_2 article_3 article_4";
+                height: 300px;
+                width: 100%;
+                background-color:  #FDF4DE, #E3DCC8, #FAF6E8, #E3DEC8, #F9F6E2;
+                background: linear-gradient(70deg);
+                text-align: center;
+                position: absolute;
+                
+            }
+
+        </style>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="CSS/menubar.css">
+        <link rel="stylesheet" type="text/css" href="CSS/footer.css">
+        <link rel="icon" href="imagenes/perro.png">
+    </head>
+
+    <body>
+
+        <header>
+            <a href="#" class="logo">Mascota Feliz</a>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="#">Registros</a>
+                        <ul>
+                            <li><a href="resgistrar mascota.html">registro de mascota</a></li>
+                            <li><a href="registrar propietario.html">registro de propietario</a></li>
+                            <li><a href="registrar veterinario.html">registro de veterinario</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Consultas</a>
+                        <ul>
+                            <li><a href="consultar mascota.html">Consultar mascota</a></li>
+                            <li><a href="consultar mascotas.html">Consultar lista de mascotas</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="https://imaster.academy/login/index.php">Imaster</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="zona1"></section>
+
+        <footer>
+            <div id="barra_espaciadora"></div>
+            <section id="copyright">
+
+                <article class="article1">
+                    <ul>
+                        <li><a href="https://www.facebook.com/juanjo.londonoagudelo"><img src="imagenes/facebook.png" style="width: 20px;" class="facebook">   juan jose londoño </a></li>
+                    </ul>
+
+                    <ul>
+                        <li><img src="imagenes/facebook.png" style="width: 20px;" class="facebook">   julian bustamante</li>
+                        <li></li>
+                    </ul>
+
+                    <ul>
+                        <li><img src="imagenes/facebook.png" style="width: 20px;" class="facebook">  jhony granada   </li>
+                    </ul>
+
+                    <ul>
+                        <li><img src="imagenes/facebook.png" style="width: 20px;" class="facebook">  jose galindo</li>
+                        <li></li>
+                    </ul>
+
+                    <ul>
+                        <li><img src="imagenes/facebook.png" style="width: 20px;" class="facebook">   jorge salamanca</li>
+                    </ul>
+                    
+                </article>
+
+                <article class="article2">
+                    <ul>
+                        <li><a href="https://twitter.com/Lond_ho13"><img src="imagenes/gorjeo.png" style="width: 20px;" class="facebook">   juan jose londoño</a></li>
+                    </ul>
+
+                    <ul>
+                        <li><img src="imagenes/gorjeo.png" style="width: 20px;" class="facebook">   julian bustamante</li>
+                    </ul>
+
+                    <ul>
+                        <li><img src="imagenes/gorjeo.png" style="width: 20px;" class="facebook">   jhony granada</li>
+                    </ul>
+
+                    <ul>
+                        <li><img src="imagenes/gorjeo.png" style="width: 20px;" class="facebook">   jose galindo</li>
+                    </ul>
+                    
+                    <ul>
+                        <li><img src="imagenes/gorjeo.png" style="width: 20px;" class="facebook">   jorge salamanca</li>
+
+                    </ul>
+                </article>
+
+                <article class="article3">
+                    <ul>
+                        <li><a href="https://github.com/LOND-HO13"><img src="imagenes/github.png" style="width: 20px;" class="facebook">   juan jose londoño</a></li>
+                    </ul>
+
+                    <ul>
+                        <li><img src="imagenes/github.png" style="width: 20px;" class="facebook">   julian bustamante</li>
+                    </ul>
+
+                    <ul>
+                        <li><img src="imagenes/github.png" style="width: 20px;" class="facebook">   hony granada</li>
+                    </ul>
+
+                    <ul>
+                        <li><img src="imagenes/github.png" style="width: 20px;" class="facebook">   jose galindo</li>
+                    </ul>
+                    
+                    <ul>
+                        <li><img src="imagenes/github.png" style="width: 20px;" class="facebook">   jorge salamanca</li>
+                    </ul>
+                </article>
+
+                <article class="article4">
+                    <a href="https://p4s.co/mision-tic-utp#:~:text=Misi%C3%B3n%20TIC%202022%20es%20el,Cuarta%20Revoluci%C3%B3n%20Industrial%2C%20mujeres%20y"><img src="imagenes/logo_utp.png" style="width: 150px; margin-top: 120px;"> </a>     
+                </article>
+
+
+            </section>
+        </footer>
+
+        <script type="text/javascript">
+            window.addEventListener("scroll", function () {
+                var header = document.querySelector("header");
+                header.classList.toggle("abajo", window.scrollY > 0);
+            })
+        </script>
+
+    </body>
+
+</html>
